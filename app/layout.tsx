@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>
+          {children}
+          <footer>
+            <p>© 2021 Zeikiel Labs. All rights reserved.</p>
+          </footer>
+        </main>
+      </body>
     </html>
   );
 }
