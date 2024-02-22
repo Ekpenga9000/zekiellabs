@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-secondary: #2f5c70;
+  --color-primary: #24a7e3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +18,7 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-snap-align: start;
 }
@@ -38,10 +40,16 @@ html{
 
 /* break points */
 
-
-
 /* general classes */
 
-.test-border{
+/* colors */
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.test-border {
   border: 1px solid red;
 }

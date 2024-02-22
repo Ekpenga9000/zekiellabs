@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import "@styles/globals.css";
 import Footer from "./components/Footer";
 
-const poppins = Poppins({weight:["400","500","600"],subsets:["latin"]});
+const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Zeikiel Labs - Digital Solutions Agency",
@@ -19,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ poppins.className }>
+      <head>
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={poppins.className}>
         <Nav />
         <main>{children}</main>
         <Footer />
