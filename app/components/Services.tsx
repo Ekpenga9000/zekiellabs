@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section id="services" className="flex justify-center h-80 px-2 xl:px-4">
+    <section id="services" className="flex justify-center mb-12 px-2 xl:px-4">
       <div className="container-custom">
         <h2 className="text-lg font-semibold mt-5 color-secondary">Services</h2>
         <p className="text-3xl mt-5">
@@ -10,7 +10,7 @@ const Services = () => {
           Solutions, and Expert Consultation.
         </p>
         <div>
-          <div className="container-custom grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+          <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             <div className="bg-white p-5 rounded-md shadow-md">
               <i className="bx bx-desktop text-4xl color-primary"></i>
               <h3 className="text-xl font-semibold mt-5">Landing Pages</h3>

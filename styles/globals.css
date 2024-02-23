@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
   scroll-snap-align: start;
 }
-/* body {
+/* .steps {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -31,6 +31,11 @@ html {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.steps {
+  background:var(--color-primary);
+  color: #fff;
+}
 
 @layer utilities {
   .text-balance {
@@ -73,9 +78,7 @@ html {
 .h-80 {
   height: 80vh;
 }
-.head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
-}
+
 
 /* colors */
 

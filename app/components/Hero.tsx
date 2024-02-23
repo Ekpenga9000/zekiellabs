@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="h-80 flex justify-center items-center px-2 xl:px-4">
+    <section className="h-screen flex justify-center items-center px-2 xl:px-4">
       <div className="container-custom lg:px-2">
         <h1 className="text-4xl font-extrabold text-black sm:text-5xl">
           Dream, Develop, <br />
