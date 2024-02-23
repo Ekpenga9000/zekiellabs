@@ -3,7 +3,7 @@ import PriceCard from "./PriceCard";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="flex justify-center">
+    <section id="pricing" className="flex justify-center mt-12">
       <div className="container-custom">
         <h2 className="text-2xl font-semibold mt-5 color-secondary">Pricing</h2>
         <p className="text-lg mt-5 text-gray-600">
