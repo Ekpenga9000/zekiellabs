@@ -12,27 +12,25 @@ const Services = () => {
         <div>
           <div className="container-custom grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
             <div className="bg-white p-5 rounded-md shadow-md">
-              <i className="bx bx-code-alt text-4xl color-primary"></i>
-              <h3 className="text-xl font-semibold mt-5">Web Development</h3>
+              <i className="bx bx-desktop text-4xl color-primary"></i>
+              <h3 className="text-xl font-semibold mt-5">Landing Pages</h3>
               <p className="mt-3">
-                Custom web development to meet your unique needs. We specialize
-                in building responsive, SEO friendly web applications.
+                Build a strong online presence with a custom landing page. We can
+                help you create a professional, responsive, and SEO friendly page that converts.  
               </p>
             </div>
             <div className="bg-white p-5 rounded-md shadow-md">
-              <i className="bx bx-mobile text-4xl color-primary"></i>
-              <h3 className="text-xl font-semibold mt-5">Mobile Development</h3>
+              <i className="bx bx-code-alt text-4xl color-primary"></i>
+              <h3 className="text-xl font-semibold mt-5">Application Development</h3>
               <p className="mt-3">
-                Mobile app development for iOS and Android. We specialize in
-                React Native and Flutter.
+                We build custom web applications that are scalable and secure. We can help you bring your ideas to life.
               </p>
             </div>
             <div className="bg-white p-5 rounded-md shadow-md">
               <i className="bx bx-data text-4xl color-primary"></i>
-              <h3 className="text-xl font-semibold mt-5">Software Solutions</h3>
+              <h3 className="text-xl font-semibold mt-5">Custom Solutions</h3>
               <p className="mt-3">
-                Custom software solutions to meet your unique needs. We
-                specialize in SaaS, PaaS, and custom software development.
+                We provide expert consultation and custom solutions to help you solve your unique business challenges.
               </p>
             </div>
           </div>
