@@ -32,6 +32,20 @@ html {
     rgb(var(--background-start-rgb));
 } */
 
+.bg-img{
+  background-image: url('../public/images/hero2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.overlay {
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
 .steps {
   background:var(--color-primary);
   color: #fff;
@@ -89,9 +103,66 @@ html {
   color: var(--color-secondary);
 }
 
+.right-50 {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.outline-primary {
+  outline: 1px solid var(--color-primary);
+}
+
+.outline-primary:active {
+  outline: 1px solid var(--color-primary);
+}
+
+.outline-primary:focus {
+  outline: 1px solid var(--color-primary);
+}
+
 .bg-primary {
   background-color: var(--color-primary);
 }
+
+.bg-attachment {
+  background-attachment: fixed;
+}
+
 .test-border {
   border: 1px solid red;
 }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+.timeline-item {
+  /* position: relative; */
+  padding: 20px 0;
+  width: 50%;
+  padding: 1rem;
+  /* z-index: 1; */
+}
+
+.timeline-item:nth-child(even){
+  margin-left: 50%;
+  text-align: start;
+}
+/* .timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+} */

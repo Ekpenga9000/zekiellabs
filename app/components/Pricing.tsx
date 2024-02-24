@@ -3,7 +3,7 @@ import PriceCard from "./PriceCard";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="flex justify-center mt-12">
+    <section id="pricing" className="flex justify-center mt-12 px-4">
       <div className="container-custom">
         <h2 className="text-2xl font-semibold mt-5 color-secondary">Pricing</h2>
         <p className="text-lg mt-5 text-gray-600">
@@ -31,7 +31,7 @@ const Pricing = () => {
             features={[
               "Application design architecture, consultation and wireframing.",
               "Database design.",
-              "Scrum master.",
+              "Agile/Scrum Consultation and services.",
             ]}
           />
           <PriceCard
@@ -40,8 +40,8 @@ const Pricing = () => {
             price="2000"
             description="This is ideal for businesses or brands who want to build custom web applications."
             features={[
-              "Custom web applications. Scalable and secure.",
-              "Build front-end, back-end, and full-stack applications.",
+              "Custom web applications and solutions.",
+              "Build front-end, back-end, and full-stack applications. Scalable and secure.",
               "Bring your ideas to life.",
             ]}
           />

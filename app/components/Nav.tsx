@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <header className="flex justify-center relative bg-white">
-      <nav className="container-custom flex justify-between items-center py-4 px-2 xl:px-4">
+      <nav className="container-custom flex justify-between items-center py-4 px-4">
         <a href="/" className="font-semibold">
           Zekiel <span className="color-primary">Labs</span>
         </a>
@@ -44,7 +44,7 @@ const Nav = () => {
         </div>
 
         {isDropdown && (
-          <div className="absolute md:hidden bg-white start-0 end-0 top-0 pt-5 h-screen">
+          <div className="absolute md:hidden bg-white start-0 end-0 top-0 pt-5 h-screen z-30">
             <div
               className="cursor-pointer absolute top-5 right-5"
               onClick={handleDropdown}

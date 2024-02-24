@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section id="services" className="flex justify-center mb-12 px-2 xl:px-4">
+    <section id="services" className="flex justify-center my-12 px-4">
       <div className="container-custom">
         <h2 className="text-2xl font-semibold mt-5 color-secondary">Services</h2>
         <p className="text-lg mt-5 text-gray-600">

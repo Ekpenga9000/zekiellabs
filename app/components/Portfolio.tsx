@@ -8,7 +8,7 @@ const Portfolio = () => {
     alt: "Care for all website"
   }
   return (
-    <section className='flex justify-center mt-12 '>
+    <section className='flex justify-center mt-12 px-4'>
       <div className="container-custom">
         <h2 className="text-2xl font-semibold mt-5 color-secondary">Portfolio</h2>
         <p className="text-lg mt-5 text-gray-600">
