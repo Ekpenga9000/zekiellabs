@@ -16,7 +16,10 @@ export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
   const triggerComponent = useRef(null);
-
+ 
+  const handlePopup = () => {
+    setShowPopup(prev => !prev);
+   };
 
   useLayoutEffect(() => {
     const tl = gsap.timeline();
@@ -44,9 +47,9 @@ export default function Home() {
       <Pricing />
       <Portfolio />
       <Contact />
-      {/* <ContactPopup /> */}
+      {showPopup && <ContactPopup func={handlePopup}/> }
       <div ref={popupRef} className="hidden">
-        <PopupButton />
+        <PopupButton func={handlePopup} isPopupOpen={ showPopup } />
       </div>
     </section>
   );

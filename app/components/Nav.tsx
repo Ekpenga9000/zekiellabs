@@ -1,5 +1,6 @@
 "use client";
-
+import Image from "next/image";
+import chatBot from "@public/images/chatbot2.png";
 import { useState } from "react";
 
 const Nav = () => {
@@ -11,8 +12,14 @@ const Nav = () => {
 
   return (
     <header className="flex justify-center relative bg-white">
-      <nav className="container-custom flex justify-between items-center py-4 px-4">
-        <a href="/" className="font-semibold">
+      <nav className="container-custom flex justify-between items-center py-4 px-4 z-30">
+        <a href="/" className="font-semibold flex">
+          <Image
+            src={chatBot}
+            alt="chatbot logo"
+            width={19}
+            height={19}
+          />
           Zekiel <span className="color-primary">Labs</span>
         </a>
         <ul className="hidden md:flex md:gap-4">
@@ -44,7 +51,7 @@ const Nav = () => {
         </div>
 
         {isDropdown && (
-          <div className="absolute md:hidden bg-white start-0 end-0 top-0 pt-5 h-screen z-30">
+          <div className="absolute md:hidden bg-white start-0 end-0 top-0 pt-5 h-screen z-40">
             <div
               className="cursor-pointer absolute top-5 right-5"
               onClick={handleDropdown}

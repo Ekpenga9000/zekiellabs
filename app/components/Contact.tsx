@@ -1,5 +1,5 @@
 "use client";
-import React, { use } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser"; 
 
 const Contact = () => {

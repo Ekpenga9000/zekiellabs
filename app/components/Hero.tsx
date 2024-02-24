@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "@public/images/hero2.jpg";
+import chatBot from "@public/images/chatbot3.png";
 
 const Hero = () => {
   return (
@@ -30,14 +30,14 @@ const Hero = () => {
             <i className="bx bx-right-arrow-alt bx-fade-right absolute top-4"></i>
           </a>
         </div>
-        {/* <div>
+        <div className="z-20">
           <Image
-            src={img}
+            src={chatBot}
             alt="Hero Image"
             width={500}
             height={500}
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );
