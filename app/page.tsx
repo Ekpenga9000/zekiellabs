@@ -1,5 +1,5 @@
 "use client";
-import {useRef, useLayoutEffect, useState} from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import Services from "./components/Services";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
@@ -16,10 +16,12 @@ export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
   const triggerComponent = useRef(null);
- 
+  const triggerComponent2 = useRef(null);
+  const triggerComponent3 = useRef(null);
+
   const handlePopup = () => {
-    setShowPopup(prev => !prev);
-   };
+    setShowPopup((prev) => !prev);
+  };
 
   useLayoutEffect(() => {
     const tl = gsap.timeline();
@@ -30,6 +32,17 @@ export default function Home() {
       ease: "power2",
       scrollTrigger: {
         trigger: triggerComponent.current,
+        start: "top 70%",
+        end: "bottom 30%",
+        scrub: true,
+      },
+    });
+    tl.to(popupRef.current, {
+      duration: 2,
+      display: "none",
+      ease: "power2",
+      scrollTrigger: {
+        trigger: triggerComponent2.current,
         start: "top 100%",
         end: "bottom 20%",
         scrub: true,
@@ -41,15 +54,17 @@ export default function Home() {
     <section>
       <Hero />
       <div ref={triggerComponent}>
-      <Services />
+        <Services />
+        <Steps />
+        <Pricing />
+        <Portfolio />
       </div>
-      <Steps />
-      <Pricing />
-      <Portfolio />
-      <Contact />
-      {showPopup && <ContactPopup func={handlePopup}/> }
+      <div ref={triggerComponent2}>
+        <Contact />
+      </div>
+      {showPopup && <ContactPopup func={handlePopup} />}
       <div ref={popupRef} className="hidden">
-        <PopupButton func={handlePopup} isPopupOpen={ showPopup } />
+        <PopupButton func={handlePopup} isPopupOpen={showPopup} />
       </div>
     </section>
   );

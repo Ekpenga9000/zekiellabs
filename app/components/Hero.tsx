@@ -4,7 +4,7 @@ import chatBot from "@public/images/chatbot3.png";
 
 const Hero = () => {
   return (
-    <section className="h-screen flex justify-center items-center px-4 bg-img relative bg-attachment">
+    <section id="hero" className="h-screen flex justify-center items-center px-4 bg-img relative bg-attachment">
       <div className="overlay"></div>
       <div className="container-custom lg:px-2 flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="z-20">

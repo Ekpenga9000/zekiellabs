@@ -9,7 +9,7 @@ interface PopupButtonProps {
 const PopupButton = (props: PopupButtonProps) => {
   const { func, isPopupOpen } = props;
   return (
-    <div className="fixed right-3 bottom-4">
+    <div className="fixed right-3 bottom-4 z-10">
       {!isPopupOpen ? (
         <button
           onClick={() => func()}
