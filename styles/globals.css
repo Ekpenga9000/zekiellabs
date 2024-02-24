@@ -145,11 +145,10 @@ html {
 
 
 .timeline-item {
-  /* position: relative; */
   padding: 20px 0;
   width: 50%;
   padding: 1rem;
-  /* z-index: 1; */
+ 
 }
 
 .timeline-item:nth-child(even){
