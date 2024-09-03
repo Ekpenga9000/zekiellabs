@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import chatBot from "@public/images/chatbot3.png";
+import chatBot from "@public/images/chatbot3.webp";
 
 const Hero = () => {
   return (

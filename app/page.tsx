@@ -17,7 +17,6 @@ export default function Home() {
   const popupRef = useRef(null);
   const triggerComponent = useRef(null);
   const triggerComponent2 = useRef(null);
-  const triggerComponent3 = useRef(null);
 
   const handlePopup = () => {
     setShowPopup((prev) => !prev);

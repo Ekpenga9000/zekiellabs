@@ -2,7 +2,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
-import chatBot from "@public/images/chatbot.png";
+import chatBot from "@public/images/chatbot.webp";
 
 interface ContactPopupProps {
   func: Function;
