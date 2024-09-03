@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import chatBot from "@public/images/chatbot.png";
+import chatBot from "@public/images/chatbot.webp";
 
 interface PopupButtonProps {
   func: Function;

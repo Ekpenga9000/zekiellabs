@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfolioCard from './PortfolioCard';
-import imgSrc from "@public/images/careforall.png";
+import imgSrc from "@public/images/careforall.webp";
 
 const Portfolio = () => {
   const img = {

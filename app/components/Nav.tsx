@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import chatBot from "@public/images/chatbot2.png";
+import chatBot from "@public/images/chatbot2.webp";
 import { useState } from "react";
 
 const Nav = () => {
